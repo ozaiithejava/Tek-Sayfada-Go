@@ -1010,4 +1010,32 @@ func printMemoryUsage() {
 
 ```
 
-##### Zamanla kanalı eklerim 
+#### Async
+
+```Go
+package main
+
+import (
+	"fmt"
+	"time"
+)
+
+func main() {
+	// Goroutine kullanarak asenkron işlem
+	go asyncFunction("Merhaba, ")
+
+	// Ana program devam eder
+	fmt.Println("Bu kısım hemen çalışır.")
+
+	// Bir süre bekleyelim, aksi takdirde goroutine'in işlemesi bitmeden program sonlanabilir
+	time.Sleep(2 * time.Second)
+}
+
+func asyncFunction(message string) {
+	// Goroutine içinde asenkron olarak çalışacak işlem
+	time.Sleep(1 * time.Second)
+	fmt.Println(message + "Dünya!")
+}
+```
+
+
