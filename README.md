@@ -973,7 +973,7 @@ func main() {
 
 #### Arena
 
-````go
+```go
 package main
 
 import (
