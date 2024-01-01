@@ -970,4 +970,42 @@ func main() {
     fmt.Println(p.FirstName, p.LastName, p.Age)
 }
 ```
+#### Arena
+
+````go
+package main
+
+import (
+	"fmt"
+	"runtime"
+	"time"
+)
+
+func main() {
+	// Bellek kullanımını izleme
+	go func() {
+		for {
+			printMemoryUsage()
+			time.Sleep(1 * time.Second)
+		}
+	}()
+
+	// Büyük miktarda bellek tüketen işlem
+	for i := 0; i < 1000000; i++ {
+		_ = make([]byte, 1024)
+	}
+
+	// Bellek profili al
+	var memStats runtime.MemStats
+	runtime.ReadMemStats(&memStats)
+	fmt.Printf("\nToplam Ayrılan Bellek: %v MB\n", memStats.TotalAlloc/1024/1024)
+}
+
+func printMemoryUsage() {
+	var memStats runtime.MemStats
+	runtime.ReadMemStats(&memStats)
+	fmt.Printf("Ayrılan Bellek: %v MB\n", memStats.Alloc/1024/1024)
+}
+```
+
 ##### Zamanla kanalı eklerim 
