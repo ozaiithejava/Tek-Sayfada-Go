@@ -970,6 +970,7 @@ func main() {
     fmt.Println(p.FirstName, p.LastName, p.Age)
 }
 ```
+
 #### Arena
 
 ````go
@@ -1006,6 +1007,7 @@ func printMemoryUsage() {
 	runtime.ReadMemStats(&memStats)
 	fmt.Printf("Ayrılan Bellek: %v MB\n", memStats.Alloc/1024/1024)
 }
+
 ```
 
 ##### Zamanla kanalı eklerim 
