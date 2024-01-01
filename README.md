@@ -39,6 +39,57 @@ func main() {
     fmt.Println("Sanal Sayı:", imaginaryNum)
 }
 ```
+#### Daha çok değisken:
+
+```Go
+package main
+
+import "fmt"
+
+func main() {
+    // int türleri
+    var myInt int = 42
+    var myInt8 int8 = 127
+    var myInt16 int16 = -32768
+    var myInt32 int32 = -2147483648
+    var myInt64 int64 = 9223372036854775807
+
+    // uint türleri
+    var myUint uint = 42
+    var myUint8 uint8 = 255
+    var myUint16 uint16 = 65535
+    var myUint32 uint32 = 4294967295
+    var myUint64 uint64 = 18446744073709551615
+
+    // float türleri
+    var myFloat32 float32 = 3.14
+    var myFloat64 float64 = 3.14
+
+    // complex türleri
+    var myComplex64 complex64 = 1 + 2i
+    var myComplex128 complex128 = 1 + 2i
+
+    // Değerleri yazdırma
+    fmt.Println("int:", myInt)
+    fmt.Println("int8:", myInt8)
+    fmt.Println("int16:", myInt16)
+    fmt.Println("int32:", myInt32)
+    fmt.Println("int64:", myInt64)
+
+    fmt.Println("uint:", myUint)
+    fmt.Println("uint8:", myUint8)
+    fmt.Println("uint16:", myUint16)
+    fmt.Println("uint32:", myUint32)
+    fmt.Println("uint64:", myUint64)
+
+    fmt.Println("float32:", myFloat32)
+    fmt.Println("float64:", myFloat64)
+
+    fmt.Println("complex64:", myComplex64)
+    fmt.Println("complex128:", myComplex128)
+}
+
+```
 
 #### If Else
 
