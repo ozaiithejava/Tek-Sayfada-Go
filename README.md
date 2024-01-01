@@ -321,6 +321,32 @@ func main() {
 }
 ```
 
+Public / Private fonksiyon
+
+```Go
+package main
+
+import (
+	"fmt"
+	"github.com/yourusername/yourpackage/utils"
+)
+
+// ExportedFunction bir paket içinde ve diğer paketlerden erişilebilir
+func ExportedFunction() {
+	fmt.Println("Bu fonksiyon diğer paketlerden erişilebilir.")
+}
+
+// nonExportedFunction sadece bu paket içinden erişilebilir
+func nonExportedFunction() {
+	fmt.Println("Bu fonksiyon sadece bu paket içinden erişilebilir.")
+}
+
+func main() {
+	ExportedFunction() // Diğer paketten erişilebilen fonksiyon
+	utils.CallNonExported() // Bu paket içinden erişilebilen fonksiyon
+}
+```
+
 #### Arrayler
 
 ```Go
