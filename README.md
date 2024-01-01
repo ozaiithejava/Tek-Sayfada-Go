@@ -1038,4 +1038,27 @@ func asyncFunction(message string) {
 }
 ```
 
+#### iota
+
+İota, özel bir const ifadesidir ve bir blok içindeki her bir const değişkenine otomatik olarak artan sayısal değerleri atar. Eğer iota kullanılmışsa ve bir değer belirtilmemişse, iota'nın değeri sıfırdan başlar ve her bir const değişkeni için bir artar.
+
+```go
+package main
+
+import "fmt"
+
+const (
+	Pazartesi = iota // 0
+	Sali             // 1
+	Carsamba         // 2
+	Persembe         // 3
+	Cuma             // 4
+	Cumartesi        // 5
+	Pazar            // 6
+)
+
+func main() {
+	fmt.Println(Pazartesi, Sali, Carsamba, Persembe, Cuma, Cumartesi, Pazar)
+}
+```
 
