@@ -1,6 +1,6 @@
 # Tek Sayfa Golang Syntax
 
-![welcome]([xxx](https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Aqua.png))
+![Golang Logo](https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Aqua.png)
 
 
 #### Değişkenler:
