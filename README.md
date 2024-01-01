@@ -1,5 +1,8 @@
 # Tek Sayfa Golang Syntax
 
+![welcome]([xxx](https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Aqua.png))
+
+
 #### Değişkenler:
 ```Go
 package main
