@@ -91,6 +91,29 @@ func main() {
 
 ```
 
+##### type alma
+```go
+
+package main
+
+import (
+	"fmt"
+	"reflect"
+)
+
+func main() {
+	// Örnek bir değer oluşturalım
+	value := 42
+
+	// Değerin türünü alalım
+	valueType := reflect.TypeOf(value)
+
+	// Elde ettiğimiz türü ekrana yazdıralım
+	fmt.Println("Değerin Türü:", valueType)
+}
+```
+
+
 #### If Else
 
 if ve else yapısı belirli koşulların sağlanması veya sağlanmaması durumunda devreye giren kod bloklarıdır
