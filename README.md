@@ -145,7 +145,48 @@ func main() {
 }
 ```
 
+##### %v % t
 
+```go
+package main
+
+import "fmt"
+
+func main() {
+    number := 42
+    text := "Merhaba, Dünya!"
+
+    fmt.Printf("Sayı: %v\n", number)
+    fmt.Printf("Metin: %v\n", text)
+}
+```
+konsol cıktısı
+```markdown
+
+Sayı: 42
+Metin: Merhaba, Dünya!
+```
+
+```go
+
+package main
+
+import "fmt"
+
+func main() {
+    isTrue := true
+    isFalse := false
+
+    fmt.Printf("Doğru mu: %t\n", isTrue)
+    fmt.Printf("Yanlış mı: %t\n", isFalse)
+}
+```
+konsol cıktisı
+```markdown
+
+Doğru mu: true
+Yanlış mı: false
+```
 #### If Else
 
 if ve else yapısı belirli koşulların sağlanması veya sağlanmaması durumunda devreye giren kod bloklarıdır
