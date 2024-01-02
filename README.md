@@ -571,6 +571,66 @@ func main() {
 }
 ```
 
+####  Make
+
+```go
+
+package main
+
+import "fmt"
+
+func main() {
+    // make ile int türünde elemanları olan bir dilim oluşturma
+    mySlice := make([]int, 5, 10)
+
+    // Oluşturulan dilimin değerlerini ekrana yazdırma
+    fmt.Println(mySlice) // [0 0 0 0 0]
+}
+```
+
+
+Bu örnekte make([]int, 5, 10) ifadesi, int türünde elemanları olan, başlangıçta 5 elemanlı (ancak kapasitesi 10 olan) bir dilim oluşturur.
+
+```go
+
+package main
+
+import "fmt"
+
+func main() {
+    // make ile string türünde key ve int türünde value içeren bir harita oluşturma
+    myMap := make(map[string]int)
+
+    // Oluşturulan haritaya değer atama
+    myMap["anahtar"] = 42
+
+    // Oluşturulan haritanın değerini ekrana yazdırma
+    fmt.Println(myMap) // map[anahtar:42]
+}
+```
+
+Bu örnekte make(map[string]int) ifadesi, string türünde key ve int türünde value içeren bir harita oluşturur.
+
+```go
+
+package main
+
+import "fmt"
+
+func main() {
+    // make ile int türünde elemanları olan bir kanal oluşturma
+    myChannel := make(chan int)
+
+    // Oluşturulan kanala değer gönderme
+    go func() {
+        myChannel <- 42
+    }()
+
+    // Kanaldan değer alıp ekrana yazdırma
+    fmt.Println(<-myChannel) // 42
+}
+```
+
 #### Mapler
 
 Basit mapler
