@@ -367,6 +367,23 @@ func main() {
 }
 ```
 
+_ ile değeri atlama
+```go
+
+package main
+
+import "fmt"
+
+func multipleReturns() (int, int) {
+    return 42, 100
+}
+
+func main() {
+    result, _ := multipleReturns()
+    fmt.Println(result)
+}
+``
+
 #### Arrayler
 
 ```Go
