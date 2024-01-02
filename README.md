@@ -631,6 +631,10 @@ func main() {
 }
 ```
 
+Bu örnekte make(chan int) ifadesi, int türünde elemanları olan bir kanal oluşturur.
+
+make, genellikle belirli bir başlangıç kapasitesi ve boyutu olan veri yapıları oluşturmak için kullanılır. Bu fonksiyonların detayları projenizin ihtiyaçlarına bağlı olarak değişebilir.
+
 #### Mapler
 
 Basit mapler
