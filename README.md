@@ -3,6 +3,38 @@
 ![Golang Logo](https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Aqua.png)
 
 
+Const / var
+
+const: Sabit bir değeri tanımlamak için kullanılır. Sabitlar, değerleri program çalıştırıldığında değişmeyen değerlerdir. const anahtar kelimesi ile tanımlanan sabitlere ilk değer atanmalıdır ve bu değer daha sonradan değiştirilemez.
+
+```go
+
+package main
+
+import "fmt"
+
+const pi = 3.14
+
+func main() {
+    fmt.Println(pi)
+}
+```
+
+var: Değişken tanımlamak için kullanılır. Değişkenler, program çalıştığı sürece değerleri değiştirilebilen öğelerdir. var anahtar kelimesi ile tanımlanan değişkenlere bir başlangıç değeri atanabilir veya değer atanmadan da tanımlanabilir.
+
+```go
+
+package main
+
+import "fmt"
+
+func main() {
+    var x int
+    x = 42
+    fmt.Println(x)
+}
+```
+
 #### Değişkenler:
 ```Go
 package main
