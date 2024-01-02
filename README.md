@@ -347,6 +347,26 @@ func main() {
 }
 ```
 
+çift return fonksiyon
+
+
+```Go
+package main
+
+import "fmt"
+
+func ikiDegeriDondur() (int, int) {
+    a := 2
+    b := 3
+    return a, b
+}
+
+func main() {
+    x, y := ikiDegeriDondur()
+    fmt.Println("Değerler:", x, y)
+}
+```
+
 #### Arrayler
 
 ```Go
