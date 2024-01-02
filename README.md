@@ -3,7 +3,7 @@
 ![Golang Logo](https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Aqua.png)
 
 
-Const / var
+#### Const / var
 
 const: Sabit bir değeri tanımlamak için kullanılır. Sabitlar, değerleri program çalıştırıldığında değişmeyen değerlerdir. const anahtar kelimesi ile tanımlanan sabitlere ilk değer atanmalıdır ve bu değer daha sonradan değiştirilemez.
 
