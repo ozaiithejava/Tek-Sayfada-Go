@@ -382,7 +382,7 @@ func main() {
     result, _ := multipleReturns()
     fmt.Println(result)
 }
-``
+```
 
 #### Arrayler
 
